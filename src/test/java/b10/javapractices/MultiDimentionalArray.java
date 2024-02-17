@@ -4,15 +4,15 @@ public class MultiDimentionalArray {
 
 	public static void main(String[] args) {
 
-//		int multi[][] = new int[2][3];
-//
-//		multi[0][0] = 10;
-//		multi[0][1] = 20;
-//		multi[0][2] = 30;
-//
-//		multi[1][0] = 40;
-//		multi[1][1] = 40;
-//		multi[1][2] = 80;
+		int multi1[][] = new int[2][3];
+
+		multi1[0][0] = 10;
+		multi1[0][1] = 20;
+		multi1[0][2] = 30;
+
+		multi1[1][0] = 40;
+		multi1[1][1] = 40;
+		multi1[1][2] = 80;
 
 		int multi[][] = { { 10, 20, 30 }, { 40, 40, 80, 50 }, { 2, 4, 60 } };
 
