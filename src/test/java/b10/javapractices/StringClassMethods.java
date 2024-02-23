@@ -118,6 +118,82 @@ public class StringClassMethods {
 		 */
 		System.out.println(s.substring(0, 10));
 
+		// Tests if this string starts with the specified prefix.
+		System.out.println(s.startsWith("Welcome"));
+
+		/*
+		 * Tests if the substring of this string beginning at the specified index starts
+		 * with the specified prefix.
+		 */
+		System.out.println(s.startsWith("to", 8));
+
+		/*
+		 * Returns a string resulting from replacing all occurrences of oldChar in this
+		 * string with newChar.
+		 */
+		System.out.println(s.replace('W', 'w'));
+
+		/*
+		 * Replaces each substring of this string that matches the literal target
+		 * sequence with the specified literal replacement sequence.
+		 */
+		System.out.println(s.replace("codemind", "codemind techlogy pune"));
+
+		/*
+		 * Replaces each substring of this string that matches the given regular
+		 * expression with the given replacement.
+		 */
+		String ss = "saWr23%%%^&%^&";
+		System.out.println(ss.replaceAll("[a-zA-Z0-9]", ""));
+		System.out.println(ss.replaceAll("[^0-9]", ""));
+		System.out.println(ss.replaceAll("[^a-z]", ""));
+		System.out.println(ss.replaceAll("[^A-Z]", ""));
+		System.out.println(ss.replaceAll("[0-9]", ""));
+		System.out.println(ss.replaceAll("[^%&]", ""));
+		System.out.println(ss.replaceAll("[%&^]", "1"));
+
+		ss = "ab1234";
+		/*
+		 * Replaces the first substring of this string that matches the given regular
+		 * expression with the given replacement.
+		 */
+		System.out.println(ss.replaceFirst("[0-9]", "a"));
+
+		System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+
+		// Splits this string around matches of the given regular expression.
+		String arr[] = ss.split("12");
+		for (String sss : arr) {
+			System.out.println(sss);
+		}
+
+		System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+
+		String arr1[] = ss.split("[0-9]");
+		for (String sss : arr1) {
+			System.out.println(sss);
+		}
+
+		System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+		String arr2[] = "123123123123".split("2", 3);// 1,31,31,31,3
+		for (String sss : arr2) {
+			System.out.println(sss);
+		}
+
+		int a = 1234;
+
+		// Returns the string representation of the int argument.
+		String s5 = String.valueOf(a);
+		System.out.println(s5.length());
+
+		// Returns the string representation of the char argument.
+		String s6 = String.valueOf('D');
+		System.out.println(s6.length());
+
+		// Returns the string representation of the float argument. .
+		String s7 = String.valueOf(10.5f);
+		System.out.println(s7.length());
+
 	}
 
 }
